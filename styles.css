@@ -1,0 +1,64 @@
+body {
+  background-color: #161616; /* Light blue background */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Hide horizontal scrollbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.roof {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 400px; /* Width of the roof */
+  height: 55px; /* Height of the roof */
+  background-color: #2d97a0; /* Brown color for the roof */
+  transform: translateX(-50%); /* Center the roof horizontally */
+}
+
+.pendulum {
+  position: absolute;
+  top: 20px; /* Position the pendulum below the roof */
+  left: 50%;
+  width: 2px; /* Width of the string */
+  height: 300px; /* Height of the pendulum container */
+  transform-origin: top; /* Point around which the pendulum should rotate */
+  transform: translateX(-50%); /* Center the pendulum horizontally */
+  animation: swing 2s ease-in-out infinite; /* Apply swinging animation */
+}
+
+.string {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px; /* Width of the string */
+  height: 200px; /* Height of the string */
+  background-color: #2d97a0; /* Brown color for the string */
+  transform: translateX(-50%); /* Center the string horizontally */
+}
+
+.ball {
+  position: absolute;
+  top: 200px; /* Position the ball below the string */
+  left: 50%;
+  width: 40px; /* Width of the ball */
+  height: 40px; /* Height of the ball */
+  background-color: #d3d3d3; /* Light gray color for the ball */
+  border-radius: 50%; /* Rounded shape for the ball */
+  transform: translateX(-50%); /* Center the ball horizontally */
+}
+
+@keyframes swing {
+  0% {
+    transform: translateX(-50%) rotate(-30deg); /* Swing to the left */
+  }
+  50% {
+    transform: translateX(-50%) rotate(30deg); /* Swing to the right */
+  }
+  100% {
+    transform: translateX(-50%) rotate(-30deg); /* Swing back to the left */
+  }
+}
