@@ -1,5 +1,8 @@
 # Pendulum Animation Project
 
+![Rec0063-ezgif com-video-to-gif-converter](https://github.com/HodaSedighi/moving-ball/assets/34411345/04c86d58-b32a-4e78-a577-1fe34de85fe8)
+
+
 - Project Overview
 This project demonstrates a simple pendulum animation using HTML and CSS. The animation simulates a ball hanging from a string that swings back and forth like a pendulum. The key concepts involved include CSS animations, transforms, and keyframes.
 
